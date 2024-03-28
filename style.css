@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Colores */
+:root {
+  --verde-azulado: #20c997;
+  --purpura: #6f42c1;
+  --azul: #0d6efd;
+  --second-color: rgb(0, 29, 133);
+  --second-alpha-color: rgb(2, 0, 126);
+  --jazmin: rgb(248, 222, 126);
+  --azul-uno: #4665e0;
+  --azul-dos: #3556cd;
+  --azul-tres: #2347bb;
+  --azul-cuatro: #1238a8;
+  --azul-cinco: #002995;
+  --azul-seis: #353b8b;
+  --azul-siete: #28317e;
+  --azul-ocho: #1a2671;
+  --azul-nueve: #0d1c64;
+  --azul-diez: #001157;
+  --arandano: #b00e72;
+  --arandano-dos: #9d0b62;
+  --arandano-tres: #890752;
+  --arandano-cuatro: #760442;
+  --arandano-cinco: #620032;
+  --white: #fff;
+  --black: #333333;
+  --gray-base: #333333;
+  --gray: #555;
+  --gray-dark: #444444;
+  --gray-border: #DEE2E6;
+  --gray-hover: #e9e9e9;
+  --gray-hover-light: #f0f0f0;
+  --gray-background: #FFF;
+  --gray-light: #DDD;
+  --gray-lighter: #f2f2f2;
+  --default: #838383;
+}
+
+body {
+  overflow: hidden;
+}
+
+/* ------------------------- ENCABEZADO ---------------------------*/
+/* ------------------------- HEADER ---------------------------*/
+
+.background-encabezado {
+  background-image: url('imagenes/portada2.jpg');
+  background-size: cover;
+}
+
+
+button,
+.btn,
+.boton-encabezado {
+  font-family: 'Jost', sans-serif;
+  box-shadow: 1px 2px 1px var(--gray);
+}
+
+.background-encabezado-curso {
+  background-image: url("imagenes/encabeza.jpg");
+  background-size: cover;
+  padding: 5%;
+}
+
+/* -------------------------LETRAS Y TITULOS---------------------------*/
+/* -------------------------FONT ---------------------------*/
+
+.titulo-redes-sociales {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: var(--second-color);
+}
+
+.parrafo-encabezado-1 {
+  color: var();
+  font-size: 1.2rem;
+  display: block;
+  font-weight: 600;
+}
+
+.parrafo-encabezado-2 {
+  color: var();
+  font-size: 1.2rem;
+  display: block;
+  font-weight: 600;
+}
+
+.titulo-encabezado {
+  margin-top: 1rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  animation-duration: 3s;
+  animation-name: slidein;
+  text-align: start;
+  color: var(--white);
+  text-shadow: 0px 5px 0px var(--black);
+}
+
+
+.sub-titulo-encabezado {
+  text-align: start;
+  font-size: 1.5rem;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.bg-arandano {
+  background-color: var(--arandano-dos);
+  color: var(--gray-light);
+}
+
+.sub-titulo-encabezado:hover {
+  color: var(--celeste-argentina);
+  text-shadow: 1px 1px 1px white;
+  transition: all 1s ease-in;
+}
+
+.titulo-superior {
+  font-family: 'Lato', sans-serif;
+  color: var(--black);
+  font-size: 1rem;
+}
+
+.titulo-descripcion {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.letra-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.letra-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.letra-jost {
+  font-family: 'Jost', 'Times New Roman', Times, serif;
+}
+
+.titulo-servicio {
+  font-weight: 600;
+}
+
+.parrafo {
+  font-size: 1rem;
+  text-shadow: 0px 0px 0px var(--black);
+}
+
+/* -------------------------CONTENEDORES COLUMNAS---------------------------*/
+/* -------------------------CONTAINER COLUMNS---------------------------*/
+
+
+.contenedor-encabezado {
+  margin: auto;
+}
+
+.contenedor-parrafo {
+  color: var(--gray-border);
+  margin-top: 1rem;
+}
+
+.contenedor-tarjeta {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 3rem;
+}
+
+.contenedor-contacto {
+  padding: 4rem;
+  background-color: var(--white);
+}
+
+.contenedor-columnas {
+  padding: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+
+/* Barra de navegación */
+.nav-superior {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.navbar {
+  background-color: var(--azul-diez);
+  color: var(--gray-border);
+}
+
+.navbar-nav {
+  margin-right: 1rem;
+}
+
+.nav-item {
+  margin: 0.5rem;
+}
+
+.nav-link {
+  color: var(--gray-light);
+}
+
+.nav-link:hover {
+  transition: 1s ease-in;
+  color: var(--verde-azulado);
+}
+
+/* 3 Columnas de servicios */
+
+.card-group {
+  margin: 7%;
+}
+
+.card {
+  color: var(--gray-dark);
+  background-color: var(--gray-background)
+}
+
+.card:hover {
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.76);
+  transform: scale(0.2rem);
+  transform: translateY(-5px);
+  background: #0575E6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #021B79, #0575E6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: var(--gray-light);
+}
+
+.card-title {
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.card-footer:hover {
+  color: var(--white);
+}
+
+/* Contenido principal */
+.bg-hero-image {
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Redes sociales */
+.redes-sociales {
+  text-align: center;
+  margin: 3rem;
+}
+
+.proyecto {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 1px 3px 3px 1px rgb(107, 107, 107);
+  background-color: var(--gray-hover-light);
+}
+
+.proyecto:hover {
+  transform: scale(0.2rem);
+  box-shadow: 3px 3px 5px 5px var(--gray);
+  transform: translateY(-5px);
+  background: #0575E6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #021B79, #0575E6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: var(--black);
+}
+
+.descripcion-redes-sociales {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--black);
+  font-style: italic;
+}
+
+
+
+/* Contacto final */
+.color-footer {
+  background-color: var(--second-alpha-color);
+}
+
+.iconos-tarjetas {
+  color: var(--verde-azulado);
+}
+
+/* Footer Inferior*/
+.footer-superior {
+  padding: 5rem;
+}
+
+
+/* Carrusel */
+.carousel-inner {
+  margin: 0 auto;
+  width: auto;
+  height: 50%;
+}
+
+.d-block {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-carrusel {
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.carrusel {
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.w-100 {
+  width: 50%;
+  height: 90%;
+  border-style: double;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230018ec'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230018ec'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+
+/* Whatsapp flotante */
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 40px;
+  background-color: var(--verde-azulado);
+  color: var(--gray-light);
+  border-radius: 40px;
+  text-align: center;
+  font-size: 40px;
+  z-index: 100;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.781);
+}
+
+.float:hover {
+  text-decoration: none;
+  color: var(--azul-diez);
+  background-color: var(--verde-azulado);
+}
+
+.float:hover {
+  transform: translateY(-15px);
+  box-shadow: 1px 2px 1px black;
+}
+
+.my-float {
+  margin-top: 10px;
+}
+
+
+/* ICONOS Y ENLACES */
+.bi-instagram,
+.bi-facebook,
+.bi-whatsapp,
+.bi-google {
+  color: var(--arandano-cuatro);
+}
+
+.elementor-divider {
+  width: 70px;
+  border: solid var(--naranja);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+a {
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-color);
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+@media only screen and (max-width: 620px) {
+
+  /* For mobile phones: */
+  .menu,
+  .main,
+  .right {
+    width: 100%;
+  }
+}
